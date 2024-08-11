@@ -2,42 +2,141 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content=
-		"width=device-width, initial-scale=1.0">
-	<title>HTML Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GunaSekhar Yalamuri - Professional Expertise</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 0.5rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        .skills-list,
+        .experience-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li,
+        .experience-list li {
+            background: #ecf0f1;
+            margin: 0.75rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skills-list li:hover,
+        .experience-list li:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: #2c3e50;
+            color: #ecf0f1;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 
 <body>
-	<!--Header(start)-->
-	<table id="header" border="0" width="100%"
-		cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
-		<tr>
-			<td>
-				<table border="0" cellpadding="15"
-					cellspacing="0" width="90%" align="center">
-					<tr>
-						<td>
-							
 
-						</td>
+    <header>
+        <h1>GunaSekhar Yalamuri</h1>
+        <p>Solution Architect | AWS Cloud & Linux System Administrator | 13+ Years of Experience</p>
+    </header>
 
-						<td>
-							<font face="Comic sans MS" size="6">
-								<b>Y Gunasekhar</b>
-							</font>
-						</td>
+    <div class="container">
 
-						
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a determined, energetic, and diligent professional with over 13 years of experience in AWS Cloud services and Linux system administration. I am passionate about designing, building, and deploying applications, leveraging almost all AWS services with a strong focus on high availability, fault tolerance, and auto-scaling. My expertise lies in providing cutting-edge solutions and continuously driving improvements in cloud infrastructure.
+            </p>
+        </section>
 
-						</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-	<!--Header(end)-->
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>AWS Cloud Services (EC2, S3, RDS, VPC, Route53, Lambda)</li>
+                <li>Linux System Administration</li>
+                <li>CI/CD Automation (Jenkins, Terraform, Docker, Kubernetes)</li>
+                <li>Version Control (GIT, SVN, GitHub)</li>
+                <li>Container Management (Docker, Kubernetes)</li>
+                <li>Monitoring Tools (Nagios, CloudWatch)</li>
+            </ul>
+        </section>
 
-	
+        <section class="section" id="experience">
+            <h2>Work Experience</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>Solution Architect</strong> - Indian Eagle Pvt Ltd, Hyderabad, India (Feb 2014 - Present)
+                    <p>Collaborated with businesses to migrate their on-premises application infrastructure to AWS cloud. Implemented and maintained CI/CD systems using GIT, Jenkins, and Terraform. Developed automation processes for deploying, managing, and monitoring applications using tools and scripting with Lambda functions.</p>
+                </li>
+                <li>
+                    <strong>System Administrator</strong> - YanaSoftware Pvt Ltd, Hyderabad, India (Sep 2010 - Jan 2014)
+                    <p>Administered Linux JVM and MySQL servers, managed QA and production deployments, and implemented monitoring systems. Worked closely with engineering, QA, and operations teams to achieve results.</p>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GunaSekhar Yalamuri. All Rights Reserved.</p>
+        <p>Email: hi@Gunasekhar.me | Phone: +1202-630-0047 | <a href="https://linkedin.com/in/iamgunasekhar" style="color: #ecf0f1;">LinkedIn</a></p>
+    </footer>
 
 </body>
 
